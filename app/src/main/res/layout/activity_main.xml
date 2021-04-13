@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#04A50B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Form Identitas Mahasiswa"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Nama Lengkap"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etNim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="NIM"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/etHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="No.HP"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tvjkel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/rgjkel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbPria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki" />
+
+                <RadioButton
+                    android:id="@+id/rbWanita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Prodi"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:entries="@array/prodi"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="UKM yang di ikuti :"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/amcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="AMCC" />
+
+            <CheckBox
+                android:id="@+id/himsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="HIMSSI" />
+
+            <CheckBox
+                android:id="@+id/koma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="KOMA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Status Mahasiswa : "
+                android:textColor="@color/black" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16dp"
+                android:textOff="Cuti"
+                android:textOn="Aktif" />
+
+            <Switch
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <SeekBar
+                android:id="@+id/sb"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5" />
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Simpan" />
+
+            <Button
+                android:id="@+id/btnHapus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Hapus" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

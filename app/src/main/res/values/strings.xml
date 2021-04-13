@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FormActivity2</string>
+    <string-array name="prodi">
+        <item>--Pilih--</item>
+        <item>Manajemen Informatika</item>
+        <item>Teknologi Informasi</item>
+        <item>Teknik Komputer</item>
+        <item>Ilmu Komunikasi</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
